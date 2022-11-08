@@ -1,0 +1,24 @@
+VIM="nvim"
+
+#source /usr/share/doc/fzf/examples/key-bindings.zsh
+#source /usr/share/doc/fzf/examples/completion.zsh
+
+export GIT_EDITOR=$VIM
+
+# Custom $PATH with extra locations
+export PATH="${HOME}/Library/Python/3.9/bin:/opt/homebrew/bin:/usr/local/bin:/usr/local/sbin"
+
+# Ansible Configuration
+export ANSIBLE_VAULT_PASSWORD_FILE="${HOME}/bin/vault_password_file"
+
+# Tell homebrew to not autoupdate every time I run it ( just once a week )
+export HOMEBREW_AUTO_UPDATE_SECS=604800
+
+# Configure Additional Shell Additions
+#source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+if type brew &>/dev/null; then
+    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+    autoload -Uz compinit
+    compinit
+fi
