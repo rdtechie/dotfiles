@@ -1,7 +1,7 @@
 customCommands:
   - key: "E"
     description: "Add empty commit"
-    context: "commits"
+    context: "global"
     command: 'git commit --allow-empty -m "chore: empty commit to trigger automation"'
     loadingText: "Committing empty commit..."
 promptToReturnFromSubprocess: false
