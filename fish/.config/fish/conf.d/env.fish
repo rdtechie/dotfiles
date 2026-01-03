@@ -3,7 +3,7 @@
 set -gx XDG_CONFIG_HOME $HOME/.config
 
 # Other
-set -gx PULSTAR $HOME/pulstar
+set -gx DOTFILES $HOME/.dotfiles
 set -gx CDPATH ".:$HOME:$XDG_PERSONAL_DIR:$XDG_WORK_DIR:$XDG_DOCUMENTS_DIR:$XDG_DOWNLOADS_DIR:$XDG_IDEAS_DIR"
 set -gx EDITOR nvim
 set -gx TERMINAL ghostty
@@ -30,9 +30,6 @@ set -gx PATH $HOME/opt/bin $PATH
 
 # Gnu-Sed
 set -gx PATH /opt/homebrew/opt/gnu-sed/libexec/gnubin $PATH
-
-# Set postgresql path
-set -gx PATH /opt/homebrew/opt/postgresql@18/bin $PATH
 
 # set variables for Terraform
 set -gx ARM_USE_AZUREAD true
