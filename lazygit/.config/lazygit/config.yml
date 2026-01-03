@@ -4,3 +4,4 @@ customCommands:
     context: "commits"
     command: 'git commit --allow-empty -m "chore: empty commit to trigger automation"'
     loadingText: "Committing empty commit..."
+promptToReturnFromSubprocess: false
